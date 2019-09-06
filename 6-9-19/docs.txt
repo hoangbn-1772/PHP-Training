@@ -1,0 +1,20 @@
+PHP ADVANCE
+1. Arrays Multi
+- Lưu giá trị ứng với nhiều key. vd: [value: key1, key2,...]
+- Mảng đa chiều (Multidimensional Arrays): Là mảng chứa một hoặc nhiều mảng khác (Từ 3 level trở lên khó quản lý)
+
+2. Date and Time
+- Sử dụng hàm date() để format date/time.
++ Syntax: date(format, timestamp)
+    - format: required
+    - time: optional
+3. PHP Filter
+- Là một extension được tích hợp vào thư việc của PHP. Dùng để kiểm tra tính hợp lệ của dữ liệu (validate data),
+lọc và xóa đi các ký tự lặp (sanitizing data)
+- Methods:
+    + filter_var(): Lọc một biến với một bộ lọc được chỉ định.
+
+My SQL Database
+- Connect MySQL
+- Create Database
+- Create Table
