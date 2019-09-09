@@ -1,0 +1,18 @@
+I. MySQL Prepared
+- Code PHP thuần thường mắc phải lỗi SQL injection (kỹ thuật tấn công lợi dụng những lỗ hổng về câu truy vấn dữ liệu).
+- Cách gán chuỗi thông thường sẽ mắc phỉa lỗi SQL injection:
+    + $sql = "INSERT INTO Users(fullname, addr, email) VALUES('$fullname', '$address', '$email')";
+- Trước đây sử dụng hàm addslashes() nhưng giờ sử dụng chức năng có sẵn trong các thư viện MySQLi và PDO để khắc phục
+- Prepared Statements có 3 lợi ích:
+    + Giảm thời gian phân tích cú pháp vì việc chuẩn bị truy vấn chỉ được thực hiện một lần (mặc dù câu lệnh thực thi nhiều lần)
+    + Chỉ cần gửi các tham số mỗi lần chứ không phải gửi toàn bộ truy vấn -> Giảm kích thước băng thông gửi đến server.
+    + Tránh SQL injection.
+
+II. HTML
+- <h1..6>: heading
+- <p>: Đoạn viện
+- <a>: link
+- <img>: Ảnh
+- <button>: Nút bấm
+- <ul><li>: Danh sách không đánh số  thứ tự.
+- <ol><li>: Danh sách có đánh số thứ tự.
