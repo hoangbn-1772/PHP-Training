@@ -9,10 +9,23 @@ I. MySQL Prepared
     + Tránh SQL injection.
 
 II. HTML
+1. HTML Basic.
 - <h1..6>: heading
-- <p>: Đoạn viện
+- <p>: Đoạn văn.
+- <pre>: đoạn văn hiển thị theo cách code.
 - <a>: link
 - <img>: Ảnh
 - <button>: Nút bấm
 - <ul><li>: Danh sách không đánh số  thứ tự.
 - <ol><li>: Danh sách có đánh số thứ tự.
+
+2. HTML Element.
+3. HTML attributes.
+- title: Hiển thị thêm thông tin cho 1 element.
+- href: URL for a link.
+- width, height: Kích thước ảnh
+- alt: Hiển thị đoạn text thay thế khi ảnh không hiển thị.
+- style: CSS style cho 1 element.
+- id: Id duy nhất cho 1 element.
+- disabled: element bị vô hiệu hóa.
+4. 

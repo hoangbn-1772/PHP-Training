@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<header></header>
+<head></head>
 
 <body>
     <h1>Date Time in PHP</h1>

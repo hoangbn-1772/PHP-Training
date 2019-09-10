@@ -1,0 +1,49 @@
+I. HTML (Continue)
+1. Styles
+    - background-color
+    - color
+    - font-family
+    - font-size
+    - text-align
+2. Text Formatting
+    - <b>: Bold text.
+    - <strong>: Important text.
+    - <i>: Italic text.
+    - <em>: Emphasized text
+    - <mark>: Marked text
+    - <small>: Small text
+    - <del>: Deleted text
+    - <ins>: Inserted text
+    - <sub>: Subscript text
+    - <sup>: Superscript text
+
+3. HTML CSS.
+- Inline CSS: Sử dụng thuộc tính style để áp dụng cho 1 HTML element.
+- Internal CSS:
+    + Sử dụng để định nghĩa style cho 1 HTML page.
+    + Định nghĩa ở phần <head> của HTML page, với style element.
+- External CSS:
+    + Định nghĩa style cho nhiều HTML page.
+    + Sử dụng: add <link> trong thẻ <head>.
+
+4. HTML Table.
+- Định nghĩa bằng thẻ <table>:
+    + <tr>: Table row
+    + <th>: Table header (bold and centered)
+    + <td>: data.
+
+5. HTML Iframes
+- Hiển thị một web page trong 1 web page.
+- <iframe> tag.
+
+6. HTML JavaScript
+- Tag <script>: định nghĩa 1 client-side script.
+- Chứa các câu lệnh script or chỉ tới một file script thông qua thuộc tính src.
+- Thường sử dụng trong các trường hợp:
+    + Thao tác hình ảnh.
+    + Form validation.
+    + Thay đổi động nội dung.
+- Để chọn một HTML element: document.getElementById();
+
+II. CSS.
+1. CSS basic.
