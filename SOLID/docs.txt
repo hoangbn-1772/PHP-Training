@@ -1,0 +1,31 @@
+- SOLID là viết tắt của 5 chữ cái đầu trong 5 nguyên tắc thiết kế OOP, giúp cho các dev viết ra những đoạn code dễ đọc, dễ hiểu, đặc biệt là việc maintain code sẽ dễ
+hơn rất nhiều (Ai có kinh nghiệm code đều biết rằng thời gian code chỉ chiếm 20-40%, còn lại là thời gian maintain).
+- SOLID: được đưa ra bởi Bob Martin và Michael Feathers.
+- Việc nắm được lý thuyết 5 nguyên tắc này thì có thể đơn giản, nhưng để đáp ứng được cả 5 nguyên tắc này e là điều không đơn giản.
+- 5 nguyên tắc đó bao gồm:
+    + Singgle responsibility priciple (SRP).
+    + OPen/Closed principle (OCP)
+    + Liskov substitution principe (LSP)
+    + Interface segregation principle (ISP)
+    + Dependency inversion principle (DIP)
+
+1. SRP - Single responsibility principle.
+- "A class should have only a single responsibility." - Mỗi class chỉ nên đảm nhiệm một nhiệm vụ duy nhất (Đơn nhiệm)
+Ví dụ: Nhận viên của một công ty phần mềm cần phải làm 1 trong 3 việc sau đây: developer, tester, salesman. Môĩ nhân viên sẽ có một chức vụ, ứng với chức vụ
+sẽ làm công việc tương ứng. Giả sử chúng ta sẽ thiết kế class Employee như sau:
+
+- Câu hỏi đặt ra là chúng ta có nên viết một class mà ôm tất cả các chức năng riêng biệt đó không? Thử hình dung nếu có thêm một chức năng quản lý nhân sự nữa,
+ta sẽ phải sửa lại lớp "Employee", thêm chức năng mới vào sao? Nếu có thêm 10 chức năng mới thì sẽ thế nào nhỉ? Khi đó các đối tượng được tạo ra sẽ dư thừa rất
+nhiều method.
+- Áp dụng nguyên tắc Single Responsibility: mỗi class đảm nhiệm một công việc. Ta sẽ tạo 1 abstract class là "Employee" có 1 method là "working()", từ class này
+kế thừa ra 3 lớp là Developer, Tester, Salesman. Các class này sẽ implement lại method working() để viết code cho từng công việc.
+
+- Nguyên lý này không chỉ áp dụng riêng cho lĩnh vực IT mà còn áp dụng cho hầu hết các công việc hàng ngày của bạn. (hình ảnh minh họa). Với quỹ thời gian có hạn
+trong ngày, một mình bạn vừa phải làm công việc chính của mình, vừa nấu cơm, vừa giặt giũ, vừa tán gái... khi đó mặc dù bạn có thể làm được nhiều việc cùng một
+lúc, nhưng khả năng cao là công việc bạn làm không đặt hiệu quả cao nhất.
+- Nếu muốn các công việc được hoàn thành với hiệu suất cao, hãy thử chia nhỏ công việc ra và giao cho những thành viên khác trong nhà. Như vậy chắc chắn các công
+việc đều được hoàn thành với hiệu quả tối đa.
+
+-> Kết luận: Nguyên lý này có vẻ đơn giản 
+
+Nguồn: https://nhungdongcodevui.com/2017/02/01/tim-hieu-solid-de-tro-thanh-dev-chat/
