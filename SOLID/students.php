@@ -26,6 +26,12 @@ interface NationalSocialInterface
     function runForSecretary();
 }
 
+interface InfStudy
+{
+    function studyEnglish();
+    function studyFrench();
+}
+
 class Student2
 {
     protected static $STANDARD_FEE = 1;
@@ -47,18 +53,22 @@ class Student2
 }
 
 
-class AdvancedStudent extends Student2 implements NationalSocialInterface
+class AdvancedStudent extends Student2 implements InfStudy
 {
     public function payTuitionFee()
     {
         return self::$STANDARD_FEE * 0.8;
     }
 
-    public function runForSecretary()
+    function studyEnglish()
     {
-        // Do something here.
+        // TODO: Implement studyEnglish() method.
     }
-    // Other function
+
+    function studyFrench()
+    {
+        // TODO: Implement studyFrench() method.
+    }
 }
 
 class ForeignStudent extends Student2
@@ -70,26 +80,20 @@ class ForeignStudent extends Student2
     // Other function
 }
 
-class NormalStudent extends Student2 implements NationalSocialInterface
+class NormalStudent extends Student2 implements InfStudy
 {
     public function payTuitionFee()
     {
         return self::$STANDARD_FEE;
     }
 
-    public function runForSecretary()
+    function studyEnglish()
     {
-        // Do something here.
+        // TODO: Implement studyEnglish() method.
     }
-}
 
-$st1 = new AdvancedStudent('Sun1', 19);
-$st2 = new ForeignStudent('Sun2', 20);
-$st3 = new NormalStudent('Sun3', 21);
-$students = array($st1, $st2, $st3);
-
-foreach ($students as $value) {
-    if ($value instanceof AdvancedStudent || $value instanceof NormalStudent) {
-        $value->runForSecretary();
+    function studyFrench()
+    {
+        // TODO: Implement studyFrench() method.
     }
 }

@@ -1,6 +1,7 @@
+Phần 1: SQL
 I. MySQL Prepared
 - Code PHP thuần thường mắc phải lỗi SQL injection (kỹ thuật tấn công lợi dụng những lỗ hổng về câu truy vấn dữ liệu).
-- Cách gán chuỗi thông thường sẽ mắc phỉa lỗi SQL injection:
+- Cách gán chuỗi thông thường sẽ mắc phải lỗi SQL injection:
     + $sql = "INSERT INTO Users(fullname, addr, email) VALUES('$fullname', '$address', '$email')";
 - Trước đây sử dụng hàm addslashes() nhưng giờ sử dụng chức năng có sẵn trong các thư viện MySQLi và PDO để khắc phục
 - Prepared Statements có 3 lợi ích:
@@ -8,7 +9,14 @@ I. MySQL Prepared
     + Chỉ cần gửi các tham số mỗi lần chứ không phải gửi toàn bộ truy vấn -> Giảm kích thước băng thông gửi đến server.
     + Tránh SQL injection.
 
-II. HTML
+II. So sánh MySQL và PDO.
+- MySQL không còn được hỗ trợ từ version 5.5
+- MySQLi chỉ có thể kết nối và xử lý với MySQL, còn PDO có thể kết nối với 12 hệ quản trị CSDL khác nhau.
+- Sử dụng PDO thì việc chuyển đổi hệ quản trị CSDL sẽ dễ dàng hơn, chỉ cần thay đổi chuỗi kết nối.
+- Cả 2 đều hỗ trợ Prepared Statements, tránh lỗi SQL injection.
+- Cả 2 đều hỗ trợ object-oriented (hướng đối tượng), MySQLi hỗ trợ thêm các hàm thủ tục (Procedural).
+
+Phần 2. HTML
 1. HTML Basic.
 - <h1..6>: heading
 - <p>: Đoạn văn.
@@ -28,4 +36,3 @@ II. HTML
 - style: CSS style cho 1 element.
 - id: Id duy nhất cho 1 element.
 - disabled: element bị vô hiệu hóa.
-4. 

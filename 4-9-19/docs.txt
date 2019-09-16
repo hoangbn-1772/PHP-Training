@@ -1,0 +1,19 @@
+I. Phân biệt Cookies - Session - Cache
+1. Session:
+- Là một phiên làm việc. Một Session bắt đầu khi client gửi request lên server. Tồn tại cho đến khi hết thời gian hoặc đóng ứng dụng. Được lưu trong tệp tin trên server.
+- Mỗi Session có 1 Session_ID, được cấp mới mỗi lần bắt đầu phiên làm việc mới.
+- Mỗi session tạo ra, đồng thời chúng sẽ tạo ta một tệp tin cookie lưu trên browser (có chứa Session_ID). Chỉ cần so sánh Session_ID này thì server sẽ biết request từ Client nào gửi.
+- Dùng để lưu trữ thông tin tạm thời. Hết phiên làm việc dữ liệu sẽ bị xóa.
+2. Cookie:
+- Được truyền từ server tới browser và được lưu trữ ở browser (local). Mỗi khi tải ứng dụng, trình duyệt sẽ gửi cookie để thông báo cho ứng dụng về hoạt động trước đó của bạn.
+- Không lưu thông tin quan trọng ở đây.
+- Mỗi cookie sẽ có khoảng thời gian timeout, có thể chỉ định.
+- Lưu trữ session_id.
+- Dữ liệu lưu ở Cookies có thể xem được. Nhiều ứng dụng lợi dụng việc này để chạy quảng cáo.
+
+3. Cache.
+- Là bộ nhớ đệm, vùng lưu trữ tạm thời trong máy tính.
+- Khác với Cookie ở chỗ thông tin lưu trữ ở đây là các tài liệu web/ hình ảnh/ video/ HTML,...\
+- Dùng để lưu các file copy để không phải tải lại lần nữa -> Tăng hiệu năng sử dụng.
+
+II. Phân biệt http/ https.

@@ -1,0 +1,5 @@
+I. BOOTSTRAP
+1. Grid basic
+- Bootstrap (responsive layout - co kéo linh hoạt): cho phép tối đa 12 cột trên 1 trang.
+2. Typography
+- Mặc định: font-size: 16px, line-height: 1.5, font-family: Helvetica Neue
